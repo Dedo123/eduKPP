@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน่วยที่ 2 - การเขียนโปรแกรมด้วย Scratch - โรงเรียนกำแพงเพชรพิทยาคม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="assets/KPP.png" alt="Logo" class="nav-logo">
+                <span class="school-name">KPP School</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="lessons.html" class="active">บทเรียน</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="unit-page">
+        <div class="bg-slideshow" id="bgSlideshow"></div>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="container content-wrapper">
+            <!-- Back Button -->
+            <a href="lessons.html" class="back-btn fade-in-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                กลับสู่หน้าบทเรียน
+            </a>
+
+            <div class="unit-header fade-in-up delay-1">
+                <span class="unit-badge">หน่วยที่ 2</span>
+                <h1>การเขียนโปรแกรมด้วย Scratch (ม.1-ม.2)</h1>
+                <p class="unit-subtitle">สะพานเชื่อมจากการคิดในหัวออกมาเป็น "คำสั่ง" ที่คอมพิวเตอร์เข้าใจได้จริง
+                    โดยไม่ต้องกังวลเรื่อง Syntax Error</p>
+            </div>
+
+            <div class="unit-content fade-in-up delay-2">
+
+                <!-- Intro Section -->
+                <section class="content-section">
+                    <h2 class="section-title">เนื้อหาหลัก 5 ส่วน</h2>
+                    <p class="section-desc">พื้นฐานสำคัญของการเขียนโปรแกรมด้วยบล็อกคำสั่งประกอบด้วย</p>
+
+                    <div class="pillars-grid">
+                        <!-- Pillar 1 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-1">1</div>
+                            <h3>Sequence</h3>
+                            <h4>โครงสร้างลำดับ</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การวางบล็อกคำสั่งจากบนลงล่างเพื่อให้ตัวละครทำงานตามลำดับ 1,
+                                    2, 3</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-2">2</div>
+                            <h3>Variables</h3>
+                            <h4>การใช้งานตัวแปร</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การสร้างที่เก็บข้อมูล เช่น คะแนน (Score), เวลา (Timer)
+                                    หรือพลังชีวิต (HP)</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-3">3</div>
+                            <h3>Condition</h3>
+                            <h4>การตัดสินใจและเงื่อนไข</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การใช้บล็อก if-then หรือ if-then-else
+                                    เพื่อให้โปรแกรมเลือกทำงานตามเงื่อนไข (เช่น ถ้า แตะสีเขียว ให้ ได้คะแนน)</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 4 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-4">4</div>
+                            <h3>Loop</h3>
+                            <h4>การทำงานวนซ้ำ</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การใช้คำสั่ง repeat หรือ forever เพื่อลดการวางบล็อกซ้ำๆ
+                                    และทำให้โปรแกรมทำงานต่อเนื่อง</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 5 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-5">5</div>
+                            <h3>Input & Output</h3>
+                            <h4>การรับข้อมูลและการแสดงผล</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> เช่น การกดลูกศรที่คีย์บอร์ดเพื่อเลื่อนตัวละคร
+                                    หรือการให้ตัวละครพูดตอบโต้</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefits Section -->
+                <section class="content-section benefits-section">
+                    <h2 class="section-title">ประโยชน์ที่ได้รับ</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>เข้าใจตรรกะโปรแกรมเมอร์</h4>
+                                <p>ฝึกให้คิดเป็นตรรกะว่า "ถ้าเกิดเหตุการณ์ A จะให้คอมพิวเตอร์ทำ B"
+                                    ซึ่งเป็นพื้นฐานสำคัญก่อนไปเรียนภาษาที่ยากขึ้นอย่าง Python หรือ Java</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>ฝึกความคิดสร้างสรรค์ (Creative Thinking)</h4>
+                                <p>น้องๆ สามารถสร้างเกม นิทานเคลื่อนไหว หรือสื่อการสอนของตัวเองได้จากจินตนาการ</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>เรียนรู้ระบบพิกัดและคณิตศาสตร์</h4>
+                                <p>การเคลื่อนที่ใน Scratch ช่วยให้เข้าใจเรื่องแกน และเรื่ององศา (ทิศทาง)
+                                    ได้เห็นภาพชัดเจนขึ้น</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>ฝึกการแก้ปัญหา (Debugging)</h4>
+                                <p>เมื่อโปรแกรมไม่ทำงานตามที่คิด น้องจะได้ฝึกไล่ดูทีละบล็อกว่า "ผิดที่ตรงไหน"
+                                    ซึ่งเป็นทักษะที่สำคัญมากในโลกการทำงาน</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Video Section -->
+                <section class="content-section video-section">
+                    <h2 class="section-title">วิดีโอแนะนำ Scratch</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UgGHKd_4QGw?si=KPP_Lesson"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <!-- Scratch Link Section -->
+                <section class="content-section" style="text-align: center; margin-top: 40px;">
+                    <h2 class="section-title">เริ่มเขียนโปรแกรมกันเลย!</h2>
+                    <p style="font-size: 1.2rem; color: #555; margin-bottom: 20px;">
+                        ลองสร้างโปรเจกต์ของตัวเองได้ที่เว็บไซต์ Scratch</p>
+                    <a href="https://scratch.mit.edu/" target="_blank" class="cta-button">ไปที่เว็บไซต์ Scratch</a>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

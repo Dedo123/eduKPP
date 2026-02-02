@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบหลังเรียน หน่วยที่ 1 - โรงเรียนกำแพงเพชรพิทยาคม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="assets/KPP.png" alt="Logo" class="nav-logo">
+                <span class="school-name">KPP School</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="lessons.html" class="active">บทเรียน</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="unit-page">
+        <div class="bg-slideshow" id="bgSlideshow"></div>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="container content-wrapper">
+            <!-- Back Button -->
+            <a href="unit1.html" class="back-btn fade-in-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                กลับไปเนื้อหาหน่วยที่ 1
+            </a>
+
+            <div class="unit-header fade-in-up delay-1">
+                <span class="unit-badge">แบบทดสอบหลังเรียน</span>
+                <h1>หน่วยที่ 1: แนวคิดเชิงคำนวณ</h1>
+            </div>
+
+            <div class="quiz-container fade-in-up delay-2" id="quizContainer">
+                <div class="quiz-start" id="quizStart">
+                    <p>ทดสอบความเข้าใจของคุณเกี่ยวกับแนวคิดเชิงคำนวณ</p>
+                    <p>จำนวน 2 ข้อ (สุ่มจาก 6 ข้อ)</p>
+                    <button class="cta-button" id="startQuizBtn">เริ่มทำแบบทดสอบ</button>
+                </div>
+
+                <div class="quiz-question" id="quizQuestion" style="display: none;">
+                    <div class="question-header">
+                        <span class="q-number" id="qNumber">ข้อที่ 1/2</span>
+                        <span class="q-score" id="currentScore">คะแนน: 0</span>
+                    </div>
+                    <h3 id="questionText">คำถามจะอยู่ที่นี่...</h3>
+                    <div class="options-grid" id="optionsGrid">
+                        <!-- Options will be injected here -->
+                    </div>
+                    <div class="feedback-msg" id="feedbackMsg"></div>
+                    <button class="next-btn" id="nextBtn" style="display: none;">ข้อถัดไป</button>
+                </div>
+
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <div class="result-icon">🏆</div>
+                    <h3>ผลการทดสอบ</h3>
+                    <p class="final-score">คุณทำได้ <span id="finalScoreDisplay">0</span> / 2 คะแนน</p>
+                    <button class="cta-button" id="restartQuizBtn">ทำแบบทดสอบอีกครั้ง</button>
+                    <br><br>
+                    <a href="unit1.html"
+                        style="color: var(--primary-red); font-weight: bold; text-decoration: none;">กลับไปบทเรียน</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
