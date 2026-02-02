@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน่วยที่ 1 - แนวคิดเชิงคำนวณ - โรงเรียนกำแพงเพชรพิทยาคม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="assets/KPP.png" alt="Logo" class="nav-logo">
+                <span class="school-name">KPP School</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="lessons.html" class="active">บทเรียน</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="unit-page">
+        <div class="bg-slideshow" id="bgSlideshow"></div>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="container content-wrapper">
+            <!-- Back Button -->
+            <a href="lessons.html" class="back-btn fade-in-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                กลับสู่หน้าบทเรียน
+            </a>
+
+            <div class="unit-header fade-in-up delay-1">
+                <span class="unit-badge">หน่วยที่ 1</span>
+                <h1>แนวคิดเชิงคำนวณ (Computational Thinking)</h1>
+                <p class="unit-subtitle">ไม่ใช่แค่การเขียนโปรแกรม แต่คือ "วิธีคิด" เพื่อแก้ปัญหาชีวิตอย่างเป็นระบบ</p>
+            </div>
+
+            <div class="unit-content fade-in-up delay-2">
+
+                <!-- Intro Section -->
+                <section class="content-section">
+                    <h2 class="section-title">เนื้อหาหลัก 4 เสา</h2>
+                    <p class="section-desc">หัวใจสำคัญของแนวคิดเชิงคำนวณประกอบด้วย 4 องค์ประกอบหลัก ดังนี้</p>
+
+                    <div class="pillars-grid">
+                        <!-- Pillar 1 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-1">1</div>
+                            <h3>Decomposition</h3>
+                            <h4>การแบ่งปัญหาใหญ่เป็นปัญหาย่อย</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การแตกปัญหาที่ซับซ้อนให้กลายเป็นส่วนเล็กๆ
+                                    เพื่อให้จัดการง่ายขึ้น</p>
+                                <p class="example-box"><strong>ตัวอย่าง:</strong> ถ้าจะจัดงานวันเกิด ต้องแยกย่อยเป็น
+                                    เรื่องสถานที่, อาหาร, รายชื่อแขก และกิจกรรม</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-2">2</div>
+                            <h3>Pattern Recognition</h3>
+                            <h4>การพิจารณารูปแบบ</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong>
+                                    การหาสิ่งที่เหมือนกันหรือความสัมพันธ์ของปัญหาที่เคยเจอมาก่อน</p>
+                                <p class="example-box"><strong>ตัวอย่าง:</strong>
+                                    สังเกตว่าพฤติกรรมการมาสายของเพื่อนมักเกิดในวันที่ฝนตก</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-3">3</div>
+                            <h3>Abstraction</h3>
+                            <h4>การคิดเชิงนามธรรม</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การคัดเอาเฉพาะ "ข้อมูลที่สำคัญ" ออกมา
+                                    แล้วตัดรายละเอียดที่ไม่จำเป็นทิ้งไป</p>
+                                <p class="example-box"><strong>ตัวอย่าง:</strong> การดูแผนที่รถไฟฟ้า เราสนแค่ "สถานี"
+                                    และ "จุดเชื่อมต่อ" โดยไม่สนว่าตึกข้างทางคืออะไร</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 4 -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon id-4">4</div>
+                            <h3>Algorithm Design</h3>
+                            <h4>การออกแบบอัลกอริทึม</h4>
+                            <div class="pillar-details">
+                                <p><strong>คืออะไร:</strong> การวางลำดับขั้นตอน 1, 2, 3 เพื่อแก้ปัญหาอย่างเป็นระบบ</p>
+                                <p class="example-box"><strong>ตัวอย่าง:</strong> การเขียนสูตรอาหาร
+                                    หรือขั้นตอนการประกอบเฟอร์นิเจอร์</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefits Section -->
+                <section class="content-section benefits-section">
+                    <h2 class="section-title">ประโยชน์ที่ได้รับ</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>แก้ปัญหาได้เร็วและแม่นยำขึ้น</h4>
+                                <p>เพราะเราจะไม่สับสนกับปัญหาที่ถาโถมเข้ามา แต่จะรู้วิธีจัดการทีละส่วน</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>เป็นพื้นฐานการเขียนโปรแกรม</h4>
+                                <p>การคิดแบบนี้จะช่วยให้เราสั่งงานคอมพิวเตอร์ (Coding) ได้รู้เรื่อง
+                                    เพราะคอมพิวเตอร์ทำงานตามคำสั่ง</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>เพิ่มทักษะการตัดสินใจ</h4>
+                                <p>ช่วยให้เรามองเห็นโครงสร้างของปัญหา
+                                    ทำให้เลือกวิธีแก้ปัญหาที่คุ้มค่าและมีประสิทธิภาพที่สุด</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check-icon">✓</div>
+                            <div>
+                                <h4>ประยุกต์ใช้ได้กับทุกวิชา</h4>
+                                <p>ไม่ว่าจะเป็นการวางแผนอ่านหนังสือสอบ หรือการทำโครงงานวิทยาศาสตร์
+                                    ก็ใช้หลักการนี้ได้ทั้งหมด</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Video Section -->
+                <section class="content-section video-section">
+                    <h2 class="section-title">วิดีโอประกอบการเรียนรู้</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TF84fbW46JQ?si=KPP_Lesson"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

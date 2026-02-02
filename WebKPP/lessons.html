@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทเรียน - โรงเรียนกำแพงเพชรพิทยาคม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header (Same as index) -->
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="assets/KPP.png" alt="Logo" class="nav-logo">
+                <span class="school-name">KPP School</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="lessons.html" class="active">บทเรียน</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="lessons-page">
+        <div class="bg-slideshow" id="bgSlideshow"></div>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="container content-wrapper">
+            <h1 class="page-title fade-in-up">เลือกบทเรียน: วิทยาการคำนวณ ม.2</h1>
+
+            <div class="lesson-grid">
+                <!-- Unit 1 -->
+                <a href="unit1.html" class="lesson-card fade-in-up delay-1">
+                    <div class="card-number">01</div>
+                    <div class="card-content">
+                        <h3>หน่วยที่ 1</h3>
+                        <p>องค์ประกอบของแนวคิดเชิงคำนวณ</p>
+                    </div>
+                </a>
+
+                <!-- Unit 2 -->
+                <a href="unit2.html" class="lesson-card fade-in-up delay-2">
+                    <div class="card-number">02</div>
+                    <div class="card-content">
+                        <h3>หน่วยที่ 2</h3>
+                        <p>การแก้ปัญหาด้วย Scratch</p>
+                    </div>
+                </a>
+
+                <!-- Unit 3 -->
+                <a href="unit3.html" class="lesson-card fade-in-up delay-3">
+                    <div class="card-number">03</div>
+                    <div class="card-content">
+                        <h3>หน่วยที่ 3</h3>
+                        <p>หลักการทำงานของระบบคอมพิวเตอร์</p>
+                    </div>
+                </a>
+
+                <!-- Unit 4 -->
+                <a href="unit4.html" class="lesson-card fade-in-up delay-4">
+                    <div class="card-number">04</div>
+                    <div class="card-content">
+                        <h3>หน่วยที่ 4</h3>
+                        <p>เทคโนโลยีเพื่อการสื่อสาร</p>
+                    </div>
+                </a>
+
+                <!-- Unit 5 -->
+                <a href="unit5.html" class="lesson-card fade-in-up delay-5">
+                    <div class="card-number">05</div>
+                    <div class="card-content">
+                        <h3>หน่วยที่ 5</h3>
+                        <p>การใช้เทคโนโลยีสารสนเทศอย่างมีความรับผิดชอบ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
